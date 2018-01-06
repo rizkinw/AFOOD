@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.kosalgeek.android.androidphpmysql.CategoryActivity"
+    tools:showIn="@layout/activity_category"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:layout_above="@+id/best"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/best"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/best"
+        android:layout_marginBottom="9dp"
+        android:layout_above="@+id/newweek"
+        android:layout_alignLeft="@+id/newweek"
+        android:layout_alignStart="@+id/newweek" />
+
+    <ImageButton
+        android:id="@+id/mostloved"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mostloved"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/promotions"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/promotions"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/imageButton6"
+        android:layout_alignStart="@+id/imageButton6" />
+
+
+    <ImageButton
+        android:id="@+id/newweek"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/newthis"
+        android:layout_marginBottom="87dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/imageButton5"
+        android:layout_toStartOf="@+id/imageButton5"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/budgetmeals"
+        android:layout_below="@+id/best"
+        android:layout_alignLeft="@+id/mostloved"
+        android:layout_alignStart="@+id/mostloved" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/healthy"
+        android:layout_alignTop="@+id/imageButton5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+
+    <SearchView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/searchView" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Search"/>
+
+    <ImageView
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_above="@+id/best"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="false"
+        android:src="@drawable/slider" />
+
+</RelativeLayout>

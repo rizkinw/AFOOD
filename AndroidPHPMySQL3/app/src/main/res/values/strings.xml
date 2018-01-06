@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Amikom Food</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_list">New Produk</string>
+    <string name="title_activity_detail">Detail Produk</string>
+    <string name="title_activity_insert">Insert Produk</string>
+    <string name="title_activity_category">Food-Service</string>
+    <string name="mock2_1">Masukkan NIM dan Password Untuk Login</string>
+</resources>
