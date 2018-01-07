@@ -1,7 +1,7 @@
 <?PHP
     include_once("connection.php");
 
-    $query = "SELECT * FROM tbl_event WHERE kategori='bestseller' ORDER BY pid DESC"; 
+    $query = "SELECT * FROM tbl_event WHERE kategori='bestseller' ORDER BY DESC"; 
     
     $result = mysqli_query($conn, $query);
     
